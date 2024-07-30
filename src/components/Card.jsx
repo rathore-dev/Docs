@@ -4,11 +4,12 @@ import { IoCloseOutline } from "react-icons/io5";
 import { motion } from "framer-motion"
 
 
-function Card({data , reference}) {
+function Card({data , refernce}) {
   return (
-    <motion.div drag dragConstraints={reference} whileDrag={{scale:1.2}} className="relative flex-shrink-0 w-60 h-72 rounded-[45px] bg-zinc-700 px-8 py-10 text-white overflow-hidden">
+    
+    <motion.div drag dragConstraints={refernce} whileDrag={{scale:1.2}} className="relative flex-shrink-0 w-60 h-72 rounded-[45px] bg-zinc-700 px-8 py-10 text-white overflow-hidden">
         <FaRegFileAlt/> 
-        <p className="text-sm mt-5 leading-tight font-semibold text-zinc-300">{data.desc}
+        <p className="text-sm mt-5 leading-tight text-base text-zinc-300">{data.desc}
         </p>
         <div className="footer absolute bottom-0   w-full left-0">
             <div className="flex justify-between mb-3 py-3 px-8">
